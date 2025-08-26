@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Camera } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '../assets/logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover-glow">
-            <Camera className="h-8 w-8" />
-            <span className="text-xl font-bold tracking-tight">LensStudio</span>
+            <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
+            <span className="text-xl font-bold tracking-tight">The Snake Film Production</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -32,9 +33,8 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`smooth-transition hover:text-primary ${
-                  isActive(item.path) ? 'text-primary' : 'text-foreground'
-                }`}
+                className={`smooth-transition hover:text-primary ${isActive(item.path) ? 'text-primary' : 'text-foreground'
+                  }`}
               >
                 {item.name}
               </Link>
@@ -63,11 +63,10 @@ const Navigation = () => {
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium smooth-transition ${
-                    isActive(item.path)
-                      ? 'text-primary bg-accent'
-                      : 'text-foreground hover:text-primary hover:bg-accent'
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium smooth-transition ${isActive(item.path)
+                    ? 'text-primary bg-accent'
+                    : 'text-foreground hover:text-primary hover:bg-accent'
+                    }`}
                 >
                   {item.name}
                 </Link>

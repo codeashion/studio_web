@@ -23,7 +23,7 @@ const Contact = () => {
       title: "Message Sent!",
       description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
     });
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -87,7 +87,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
@@ -98,7 +98,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         className="mt-1"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 12345 67890"
                       />
                     </div>
                     <div>
@@ -119,7 +119,7 @@ const Contact = () => {
                       </select>
                     </div>
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="message">Project Details *</Label>
                     <Textarea
@@ -133,7 +133,7 @@ const Contact = () => {
                       placeholder="Tell us about your project, vision, timeline, and any specific requirements..."
                     />
                   </div>
-                  
+
                   <Button type="submit" size="lg" className="w-full group">
                     <Send className="h-5 w-5 mr-2 group-hover:translate-x-1 transition-transform" />
                     Send Message
@@ -152,27 +152,27 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-primary mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">hello@lensstudio.com</p>
-                      <p className="text-muted-foreground">projects@lensstudio.com</p>
+                      <p className="text-muted-foreground">hello@thesnakefilmproduction.com</p>
+                      <p className="text-muted-foreground">projects@thesnakefilmproduction.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-primary mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 82385 54852</p>
                       <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM EST</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-primary mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Studio Location</h3>
                       <p className="text-muted-foreground">
                         123 Creative District<br />
-                        New York, NY 10001
+                        India, IN 395010
                       </p>
                     </div>
                   </div>
@@ -184,14 +184,14 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-4">Quick Contact</h3>
                 <div className="space-y-4">
                   <Button asChild variant="outline" className="w-full justify-start">
-                    <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/8238554852" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="h-5 w-5 mr-3" />
                       WhatsApp
                     </a>
                   </Button>
-                  
+
                   <Button asChild variant="outline" className="w-full justify-start">
-                    <a href="tel:+15551234567">
+                    <a href="tel:+918238554852">
                       <Phone className="h-5 w-5 mr-3" />
                       Call Now
                     </a>
@@ -204,13 +204,13 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-4">Follow Our Work</h3>
                 <div className="flex space-x-4">
                   <Button asChild variant="outline" size="sm">
-                    <a href="https://instagram.com/lensstudio" target="_blank" rel="noopener noreferrer">
+                    <a href="https://instagram.com/thesnakefilmproduction" target="_blank" rel="noopener noreferrer">
                       <Instagram className="h-5 w-5" />
                     </a>
                   </Button>
-                  
+
                   <Button asChild variant="outline" size="sm">
-                    <a href="https://facebook.com/lensstudio" target="_blank" rel="noopener noreferrer">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
                       <Facebook className="h-5 w-5" />
                     </a>
                   </Button>
@@ -230,36 +230,36 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-inverted-fg mb-4 animate-fade-in-up">Frequently Asked Questions</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <h3 className="text-lg font-semibold text-inverted-fg mb-2">What's your typical turnaround time?</h3>
               <p className="text-inverted-fg/70">
-                Photography: 2-3 weeks. Videography: 4-6 weeks. Reels: 1-2 weeks. 
+                Photography: 2-3 weeks. Videography: 4-6 weeks. Reels: 1-2 weeks.
                 Rush delivery available for additional fee.
               </p>
             </div>
-            
+
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h3 className="text-lg font-semibold text-inverted-fg mb-2">Do you travel for projects?</h3>
               <p className="text-inverted-fg/70">
-                Yes! We travel locally and destination projects. Travel costs are calculated 
+                Yes! We travel locally and destination projects. Travel costs are calculated
                 based on location and project requirements.
               </p>
             </div>
-            
+
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <h3 className="text-lg font-semibold text-inverted-fg mb-2">What's included in your packages?</h3>
               <p className="text-inverted-fg/70">
-                All packages include consultation, shooting/filming, professional editing, 
+                All packages include consultation, shooting/filming, professional editing,
                 and digital delivery. Print and additional services available.
               </p>
             </div>
-            
+
             <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <h3 className="text-lg font-semibold text-inverted-fg mb-2">How do we book a session?</h3>
               <p className="text-inverted-fg/70">
-                Contact us through this form or phone. We'll discuss your vision, 
+                Contact us through this form or phone. We'll discuss your vision,
                 provide a quote, and secure your date with a deposit.
               </p>
             </div>
